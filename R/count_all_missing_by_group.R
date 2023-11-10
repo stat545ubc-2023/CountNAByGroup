@@ -27,8 +27,17 @@
 #' `data` except `group`.
 #'
 #' @examples
-#' count_all_missing_by_group(datasets::airquality, Month)
+#' # Create `df` dataset
+#' df <- data.frame(
+#' group_1 = c("A","A","A","B","B","C"),
+#' group_2 = c(1,3,NA,NA,NA,9),
+#' group_3 = c(NA,2,NA,4,NA,6))
 #'
+#' # Computes number of all missing values in `df` grouped by `group_1` column
+#' count_all_missing_by_group(df, group_1)
+#'
+#' # An alternative way of invoking the function by using piping
+#' df |> count_all_missing_by_group(group_1)
 #'
 #' @export
 #'
