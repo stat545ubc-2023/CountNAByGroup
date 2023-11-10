@@ -27,8 +27,6 @@
 #' `data` except `group`.
 #'
 #' @examples
-#' # This example computes the number of missing values in the `airquality`
-#' dataset grouped by the `Month` column. The `airquality` is from `datasets` package.
 #' count_all_missing_by_group(datasets::airquality, Month)
 #'
 #'
